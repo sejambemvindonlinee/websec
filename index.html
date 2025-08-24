@@ -42,145 +42,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goes & Nicoladelli Advogados Associados</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Xavier & Teixeira Advogados</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Estilos personalizados -->
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .navbar {
+            background-color: #004080 !important; /* Azul escuro profissional */
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #ccc !important;
+        }
+        .jumbotron {
             background-color: #f8f9fa;
-        }
-        .navbar-brand {
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-        .hero {
-            background-color: #003087;
-            color: white;
-            padding: 100px 0;
+            padding: 4rem 2rem;
             text-align: center;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
         }
         .section {
             padding: 60px 0;
         }
         .section h2 {
-            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #004080;
+        }
+        .service-card {
             margin-bottom: 30px;
-            color: #003087;
+            text-align: center;
         }
-        .card {
+        .service-card img {
+            max-height: 200px;
+            object-fit: cover;
             margin-bottom: 20px;
-            border: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .footer {
-            background-color: #003087;
-            color: white;
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            max-width: 150px;
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        footer {
+            background-color: #004080;
+            color: #fff;
             padding: 20px 0;
             text-align: center;
         }
-        .footer p {
-            margin: 0;
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Goes & Nicoladelli Advogados</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Xavier & Teixeira Advogados</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicos">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Seção Home (Hero) -->
+    <section id="home" class="jumbotron">
         <div class="container">
-            <h1>Goes & Nicoladelli Advogados Associados</h1>
-            <p>Soluções jurídicas com excelência e compromisso</p>
+            <h1 class="display-4">Bem-vindo à Xavier & Teixeira Advogados</h1>
+            <p class="lead">Oferecemos soluções jurídicas inovadoras e personalizadas para proteger seus direitos e interesses. Com anos de experiência, nossa equipe está pronta para atender às suas necessidades em diversas áreas do direito.</p>
+            <img src="https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Escritório de advocacia profissional" class="img-fluid rounded">
         </div>
     </section>
 
-    <!-- Serviços Section -->
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="section bg-light">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>A Xavier & Teixeira Advogados é um escritório de advocacia fundado com o compromisso de fornecer serviços jurídicos de alta qualidade em Belo Horizonte, MG. Com CNPJ 47.640.269/0001-04, atuamos há mais de 10 anos no mercado, oferecendo consultoria e representação em diversas áreas do direito.</p>
+            <p>Nossa missão é defender os interesses de nossos clientes com ética, transparência e eficiência. Valorizamos a relação de confiança e trabalhamos para alcançar os melhores resultados possíveis, sempre atualizados com as mudanças na legislação brasileira.</p>
+            <p>Localizado no coração de Belo Horizonte, nosso escritório está equipado com tecnologia moderna para garantir agilidade e precisão em nossos serviços.</p>
+            <img src="https://images.pexels.com/photos/6077447/pexels-photo-6077447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sala de tribunal" class="img-fluid rounded mx-auto d-block">
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
     <section id="servicos" class="section">
         <div class="container">
             <h2>Nossos Serviços</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Direito Empresarial</h5>
-                            <p class="card-text">Assessoria jurídica para empresas, incluindo contratos, fusões e aquisições.</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 service-card">
+                    <img src="https://images.pexels.com/photos/4816645/pexels-photo-4816645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Consultoria em Direito Civil" class="img-fluid rounded">
+                    <h3>Direito Civil</h3>
+                    <p>Atuamos em ações de indenização, contratos, responsabilidade civil, direitos reais e obrigações. Nossa equipe analisa cada caso com profundidade para oferecer a melhor estratégia de defesa ou ação.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Direito Civil</h5>
-                            <p class="card-text">Atuação em questões de família, sucessões e contratos civis.</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 service-card">
+                    <img src="https://images.pexels.com/photos/5669605/pexels-photo-5669605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Consultoria em Direito Penal" class="img-fluid rounded">
+                    <h3>Direito Penal</h3>
+                    <p>Defesa em processos criminais, incluindo crimes contra o patrimônio, honra e vida. Fornecemos assistência desde a fase investigatória até o julgamento, garantindo o respeito aos direitos constitucionais.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Direito Trabalhista</h5>
-                            <p class="card-text">Defesa e consultoria em relações trabalhistas para empresas e empregados.</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 service-card">
+                    <img src="https://images.pexels.com/photos/5715055/pexels-photo-5715055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Consultoria em Direito de Família" class="img-fluid rounded">
+                    <h3>Direito de Família</h3>
+                    <p>Divórcios, guarda de filhos, pensão alimentícia, adoção e sucessões. Abordamos esses temas sensíveis com empatia e profissionalismo, priorizando soluções amigáveis quando possível.</p>
+                </div>
+                <div class="col-md-4 service-card">
+                    <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Consultoria em Direito Trabalhista" class="img-fluid rounded">
+                    <h3>Direito Trabalhista</h3>
+                    <p>Reclamações trabalhistas, rescisões contratuais, assédio moral e acidentes de trabalho. Representamos tanto empregados quanto empregadores para equilibrar relações laborais.</p>
+                </div>
+                <div class="col-md-4 service-card">
+                    <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Consultoria em Direito Empresarial" class="img-fluid rounded">
+                    <h3>Direito Empresarial</h3>
+                    <p>Constituição de empresas, contratos comerciais, recuperação de créditos e falências. Auxiliamos empresas a navegar pelo complexo ambiente regulatório brasileiro.</p>
+                </div>
+                <div class="col-md-4 service-card">
+                    <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Consultoria em Direito Tributário" class="img-fluid rounded">
+                    <h3>Direito Tributário</h3>
+                    <p>Planejamento fiscal, contencioso administrativo e judicial, recuperação de tributos. Otimizamos a carga tributária de forma legal e ética para indivíduos e empresas.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sobre Section -->
-    <section id="sobre" class="section bg-light">
+    <!-- Seção Equipe -->
+    <section id="equipe" class="section bg-light">
         <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>Goes & Nicoladelli Advogados Associados é um escritório comprometido com a excelência na prestação de serviços jurídicos. Com uma equipe experiente, oferecemos soluções personalizadas para atender às necessidades de nossos clientes, sempre com ética e profissionalismo.</p>
+            <h2>Nossa Equipe</h2>
+            <div class="row">
+                <div class="col-md-6 team-member">
+                    <img src="https://images.pexels.com/photos/5673490/pexels-photo-5673490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Equipe de advogados" class="img-fluid">
+                    <h4>Dr. Xavier</h4>
+                    <p>Sócio-fundador, especialista em Direito Penal e Civil com mais de 15 anos de experiência. Formado pela UFMG, com mestrado em Direito Processual.</p>
+                </div>
+                <div class="col-md-6 team-member">
+                    <img src="https://images.pexels.com/photos/5668774/pexels-photo-5668774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Advogada" class="img-fluid">
+                    <h4>Dra. Teixeira</h4>
+                    <p>Sócia, expert em Direito de Família e Trabalhista. Pós-graduada em Direito Empresarial pela PUC-MG, com foco em resoluções extrajudiciais.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contato Section -->
+    <!-- Seção Contato -->
     <section id="contato" class="section">
         <div class="container">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco para agendar uma consulta ou obter mais informações.</p>
-            <p><strong>Endereço:</strong> Avenida Centenário, 2883, Edifício Victoria Center, Sala 802, Chame-Chame, Salvador, BA, 40157-151</p>
-            <p><strong>CNPJ:</strong> 03.239.823/0035-01</p>
-            <p><strong>Email:</strong> contato@goesnicoladelli.com.br</p>
-            <p><strong>Telefone:</strong> (71) 1234-5678</p>
+            <h2>Entre em Contato</h2>
+            <div class="row">
+                <div class="col-md-6 contact-info">
+                    <p><strong>Endereço:</strong> Rua São Paulo 893, Sala 505, Centro, Belo Horizonte - MG, 30170-133</p>
+                    <p><strong>CNPJ:</strong> 47.640.269/0001-04</p>
+                    <p><strong>Telefone:</strong> (31) 1234-5678</p>
+                    <p><strong>Email:</strong> contato@xavierteixeira.com.br</p>
+                    <img src="https://images.pexels.com/photos/5715059/pexels-photo-5715059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Escritório exterior" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu email">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="5" placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <p>&copy; 2025 Goes & Nicoladelli Advogados Associados. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Xavier & Teixeira Advogados. Todos os direitos reservados. <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
